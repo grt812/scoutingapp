@@ -8,18 +8,20 @@
     <title>Scouting App</title>
   </head>
   <body>
-      <div id="inner-container">
+      <!-- <div id="inner-container"> -->
       <!-- <input id="file-input" type="file"> -->
+      <!--Competition List / Screen 1-->
       <div id="season">
           <h1 class="scouting-heading" style = "color:#0074D9">Scouting App</h1>
+          <h3 style = "color:#0074D9">Season List</h3>
           <div id="season-list">
 
           </div>
           <button id="new-season">+</button>
       </div>
-
-      <div id="screen2">
-        <h1 class="scouting-heading" style = "color:#0074D9">Scouting App</h1>
+      <!--Competition Editor / Screen 2-->
+      <div id="screen2" class="popup">
+        <h1 class="scouting-heading" style = "color:#0074D9">Competition Editor</h1>
         <br>
         <!-- <label style = "color:blue">Year</label>
         <input class="year" type="text">
@@ -35,37 +37,93 @@
         <button id="submit" style = "color:white">Submit</button>
       </div>
 
+      <!--Team List-->
       <div id="screen3">
-        <h1 id="screen3-heading" style = "color:#FF4136"> </h1>
+        <!--Team Stuff-->
         <div id="buttons-screen3">
-          <button class="screen3-buttons" id="add-match">Add match</button>
-          <button class="screen3-buttons" id="edit-comp">Edit Competition</button>
+            <h1 class="screen3-heading" style = "color:#FF4136"></h1>
+
+          <button class="screen3-buttons" id="add-team">Add team</button>
+          <button id="add-match">Add Match</button>
+          <!-- <button class="screen3-buttons" id="edit-comp">Edit Competition</button> -->
           <button class="screen3-buttons" id="back">Back</button>
-          <br>
+          </div>
           <div id="search-container">
               <input id="search" type="text" placeholder="Search">
               <button id="enter">Search</button>
           </div>
+          <div id="team-list">
+
+          </div>
+
+      </div>
+
+      <!--Team Editor-->
+      <div id="screen4">
+          <h1 id="screen4-heading" style = "color:#FF4136">Team <input type="text" id="team-number-screen-4"></h1>
           <div id="match-list">
 
           </div>
+          <button id="submit-screen4">Submit</button>
+          <button class="back-screen3">Back</button>
+      </div>
+      <div id="screen5">
+        <h1 class="screen5-heading" style = "color:#FF4136"> </h1>
+        <label class="wins-losses">Wins-Losses</label> <input type="number" class="wins-Losses"></input> - <input type="number" class="wins-Losses"></input>
+        <br>
+        <label class="team-comments">General Information</label> <br> <input type="text" class="team-comments"></input>
+        <br>
+        <label id="team-match-label">Match List</label>
+        <br>
+        <div id="team-matches">
+
         </div>
+        <br>
+        <button class="submit-screen5">Submit</button>
+        <button class="back-screen3">Back</button>
       </div>
 
-      <div id="screen4">
-
+      <div id="screen6">
+        <h1 class="screen6-heading" style = "color: black">Create Match</h1>
+        <label id="match-num-heading" style = "color: black">Match Number</label>
+        <input id="match-num" type="number">
+        <br>
+        <!-- <div class="Position">
+          <label style = "color:#0074D9">Position</label>
+          <select id="Position" class="dropdown-content">
+            <option>Close</option>
+            <option>Middle</option>
+            <option>Far</option>
+          </select>
+        </div> -->
+        <br>
+        <label id="red-alliance" style = "color: var(--red)">Red Alliance</label>
+        <br>
+        <br>
+        <label id="team1-num-heading" style = "color: var(--red)">Team</label>
+        <input id="team1-num" type="number">
+        <br>
+        <label id="team2-num-heading" style = "color: var(--red)">Team</label>
+        <input id="team2-num" type="number">
+        <br>
+        <label id="team3-num-heading" style = "color: var(--red)">Team</label>
+        <input id="team3-num" type="number">
+        <br>
+        <br>
+        <label id="blue-alliance" style = "color: var(--blue)">Blue Alliance</label>
+        <br>
+        <br>
+        <label id="team4-num-heading" style = "color:#0074D9">Team</label>
+        <input id="team4-num" type="number">
+        <br>
+        <label id="team5-num-heading" style = "color:#0074D9">Team</label>
+        <input id="team5-num" type="number">
+        <br>
+        <label id="team6-num-heading" style = "color:#0074D9">Team</label>
+        <input id="team6-num" type="number">
+        <br>
+        <button id="submit-screen4">Submit</button>
+        <button class="back-screen3">Back</button>
       </div>
-
-      <!-- <div id="team-matches">
-      </div>
-      <div id="match-editor">
-          <h1>        </h1>
-          <label style = "color:#0074D9">Team #</label>
-          <input type="number">
-          <label style = "color:#0074D9">Alliance</label>
-          <input type="text">
-      </div>
-      <h1>        </h1>
-      </div> -->
   </body>
 </html>
